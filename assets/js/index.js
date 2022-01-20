@@ -34,7 +34,7 @@ function getUserInfo() {
             if (res.status !== 0) {
                 return layui.layer.msg('获取用户信息失败！')
             }
-            // 调用 renderAvatar渲染用户的头像
+            // 调用 renderAvatar渲染用户的头像 res.data是拿到的数据
             renderAvatar(res.data)
         },
         // 为了让所有接口都可以使用，底下这串代码写到了baseAPI里面了
